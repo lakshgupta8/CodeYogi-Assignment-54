@@ -23,11 +23,11 @@ function ProductCard(product) {
         <div className="flex gap-2 mt-1 mb-8">
           {product.oldPrice && (
             <span className="text-gray-400 line-through">
-              ${Number(product.oldPrice).toFixed(2)}
+              ${product.oldPrice.toFixed(2)}
             </span>
           )}
           <span className="text-red-500 font-bold">
-            ${Number(product.price).toFixed(2)}
+            ${product.price.toFixed(2)}
           </span>
         </div>
       </div>
